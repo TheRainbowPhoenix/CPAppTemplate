@@ -15,7 +15,7 @@ CC_FLAGS:=-ffreestanding -fshort-wchar -Wall -Wextra -O2 -I $(SDK_DIR)/include/
 CXX:=sh4-elf-g++
 CXX_FLAGS:=-ffreestanding -fno-exceptions -fno-rtti -fshort-wchar -Wall -Wextra -O2 -I $(SDK_DIR)/include/ -m4a-nofpu
 
-LD:=sh4-elf-ld
+LD:=sh4-elf-gcc
 LD_FLAGS:=-nostdlib --no-undefined
 
 READELF:=sh4-elf-readelf
@@ -46,7 +46,7 @@ $(APP_ELF): $(OBJECTS) $(SDK_DIR)/sdk.o linker_hhk.ld
 	$(OBJCOPY) --set-section-flags .hollyhock_version=contents,strings,readonly $(APP_ELF) $(APP_ELF)
 
 $(APP_BIN): $(OBJECTS) $(SDK_DIR)/sdk.o linker_bin.ld
-	$(LD) --oformat binary -T linker_bin.ld -o $@ $(LD_FLAGS) $(OBJECTS) $(SDK_DIR)/sdk.o
+	$(LD) -Wl,--oformat=binary -T linker_bin.ld -o $@ $(LD_FLAGS) $(OBJECTS) $(SDK_DIR)/sdk.o
 
 # We're not actually building sdk.o, just telling the user they need to do it
 # themselves. Just using the target to trigger an error when the file is
