@@ -4,8 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/cross/hollyhock-2/sdk/include/**",
-                "/opt/cross/hollyhock-2/sdk/newlib/sh-elf/include/**"
+                "/opt/cross/hollyhock-3/sdk/include/**",
+                "/opt/cross/hollyhock-3/sdk/newlib/sh-elf/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/local/bin/sh4-elf-g++",

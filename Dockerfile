@@ -1,4 +1,4 @@
-FROM pho3be/sh4devenvgitpod:latest
+FROM classpaddev/clouddevenv:beta
 
 USER root
 

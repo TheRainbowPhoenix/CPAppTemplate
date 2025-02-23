@@ -48,7 +48,7 @@ Plug your calculator on your desktop and choose "USB Flash" mode.
 Go into your file explorer, on the "USB Drive" that's the calculator, and then copy at the root of it your `app_template.hhk` (or/and `app_template.bin`)
 Then, eject the Classpad Mass Storage device by right clicking on notifications > "Safely remove device
 
-Finally on your calculator, go in "System" from the home screen, "System" from the top menu and "Hollyhock-2 Launcher"
+Finally on your calculator, go in "System" from the home screen, "System" from the top menu and "hollyhock-3 Launcher"
 You should see the "My app name" on the list (twice if you did both the HHK and the BIN) and you can "Run" it
 <p>
   <img src="docs/run_your_app.png" alt="You can run your app by clicking Run"/>
