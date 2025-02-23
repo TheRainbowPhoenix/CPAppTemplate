@@ -1,4 +1,4 @@
-FROM classpaddev/clouddevenv:beta
+FROM ghcr.io/classpaddev/clouddevenv:beta
 
 USER root
 
